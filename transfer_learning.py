@@ -61,7 +61,7 @@ def Transfer(restore_from = None):
                 tqdm.write("\n{:>4.1f}% valid SMILES".format(100 * valid / len(seqs)))
                 tqdm.write("*" * 50 + "\n")               
         # Save the Prior
-        torch.save(Prior.rnn.state_dict(), "data/100__epoch_transfer.ckpt")
+        torch.save(Prior.rnn.state_dict(), "data/100_epochs_transfer.ckpt")
 
 if __name__ == "__main__":
     smiles_file = sys.argv[1]
