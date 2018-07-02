@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import torch
 from torch.utils.data import DataLoader
 from rdkit import Chem
@@ -14,7 +16,7 @@ def Sample(filename, enumerate_number):
     print(filename, enumerate_number)
     # Can restore from a saved RNN
     Prior.rnn.load_state_dict(torch.load(filename))
-    totalsmiles = []
+    totalsmiles = set()
     enumerate_number = int(enumerate_number)
     molecules_total = 0
     for epoch in range(1, 10000):
@@ -24,8 +26,7 @@ def Sample(filename, enumerate_number):
             smile = voc.decode(seq)
             if Chem.MolFromSmiles(smile):
                 valid += 1
-                if smile not in totalsmiles:
-                    totalsmiles.append(smile)
+                totalsmiles.add(smile)
                        
         molecules_total = len(totalsmiles)
         print(("\n{:>4.1f}% valid SMILES".format(100 * valid / len(seqs))))
