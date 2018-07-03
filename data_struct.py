@@ -151,7 +151,7 @@ def canonicalize_smiles_from_file(fname):
             smiles = line.split(" ")[0]
             mol = Chem.MolFromSmiles(smiles)          
             if filter_mol(mol):
-                smiles_list.append(MolToSmiles(mol,isomericSmiles=True))
+                smiles_list.append(Chem.MolToSmiles(mol,isomericSmiles=True))
         print("{} SMILES retrieved".format(len(smiles_list)))
         return smiles_list
 
