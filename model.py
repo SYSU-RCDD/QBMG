@@ -2,9 +2,9 @@
 # (https://github.com/MarcusOlivecrona/REINVENT).
 # We adpted it to pytorch0.4.0.
 #
-#Shuangjia Zheng, Aug 2018
+# Shuangjia Zheng, Aug 2018
+#
 
-#!/usr/bin/env python
 import numpy as np
 import torch
 import torch.nn as nn
