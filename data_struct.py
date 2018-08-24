@@ -1,3 +1,8 @@
+# This module is mostly borrowed from Olivecrona original implementation 
+# (https://github.com/MarcusOlivecrona/REINVENT).
+# We adjusted some functions for this project.
+#
+
 import numpy as np
 import random
 import re
