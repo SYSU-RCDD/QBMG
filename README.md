@@ -1,7 +1,7 @@
 # QBMG: Quasi-Biogenic Molecule Generator with Deep Recurrent Network 
 ## Introduction
-This repository contains scripts for generating biogenic-like moulecules.Papar:[QBMG: quasi-biogenic molecule generator with deep recurrent neural network](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0328-9)
-![Graph abstract](https://github.com/SYSU-RCDD/QBMG/tree/master/image/Graphical abstract.png) 
+This is a PyTorch implementation of the paper: [QBMG: quasi-biogenic molecule generator with deep recurrent neural network](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-019-0328-9)
+![Graph abstract](https://github.com/SYSU-RCDD/QBMG/blob/master/image/Graphical%20abstract.png) 
 The user can (i) obtain a certain number of unbiased biogenic-like molecules and (ii) obtain a certain number of focused chemotype derivatives with transfer learning.We thank [the previous work by the Olivecrona team](https://github.com/MarcusOlivecrona/REINVENT).The code in this repository is inspired on REINVENT.
 
 ## Usage
